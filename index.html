@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Savannah's Intro Website</title>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/my-code.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/intro.css">
+
+	</head>
+ 
+	<body>
+		<div id="banner">
+			<h1><b>Welcome!</b></h1>
+			<p align="center">
+				My home school is Centennial High School, and I am a sophomore
+			</p>
+
+			<h2><b>Website Created by Savannah</b></h2>
+		</div>
+		<hr>
+
+		<ul class="w3-navbar w3-cyan w3-aqua">
+			<li>
+				<a href="http://192.168.1.156/a2mcclendon">Mr. M</a>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">Search <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://www.google.com">Google</a>
+					<a href="#">Future link</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">CHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Eli Tanner</a>
+					<a href="#">Ashley Xu</a>
+					<a href="#">Andrew Holbrook</a>
+					<a href="#">Savannah Crow</a>
+					<a href="#">Robert Gillespie</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">EHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Ethan Parks</a>
+					<a href="#">Richard McClure</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">MA <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Bryan Higgins</a>
+				</div>
+			</li>
+
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">MHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Tyler Plaisted</a>
+					<a href="#">Neomi Barajas</a>
+					<a href="#">Tanis Steven Blinn</a>
+					<a href="#">Nicole Cline</a>
+					<a href="#">Vic Saenz</a>
+				</div>
+				</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">MVHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Daniel Carlson</a>
+					<a href="#">Brendan Stefan</a>
+					<a href="#">Micah Gomez</a>
+				</div>
+				</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-deep-purple" href="#">RMHS <i class="fa fa-caret-down"></i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Cole Patterson</a>
+					<a href="#">Andrew Wheeler</a>
+					<a href="#">Alexis Bleak</a>
+					<a href="#">Chase Seeberger</a>
+					<a href="#">David Bridgeman</a>
+				</div>
+			</li>
+			
+		</ul>
+		<br>
+
+		<div id="firstPicture">
+			<h1>Click here to show one of my favorites pictures</h1>
+			<img id="topPicture" src="images/centennial_300.jpg"	alt="Cent.jpg" width="600" height="338">
+
+		</div>
+		<br>
+		<hr>
+		<br>
+
+		<div id="slideShow"class="w3-content" style="max-width:600px;position:relative">
+
+			<div class="w3-display-container mySlides">
+				<img src="images/idaho-falls1.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					idaho falls
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/par.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Paridise
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/purple.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Pretty purple
+				</div>
+			</div>
+			<div class="w3-display-container mySlides">
+				<img src="images/sunset.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					sunset
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/index.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					Beautiful
+				</div>
+			</div>
+
+			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+
+		<br><hr><br>
+		
+
+		<input id="testbutton" type="button" value="test"/>
+		<div id="jq02">
+			<h3>This is the <strong>first</strong> line of test</h3>
+			<h3>This is the <strong>second</strong> line of test</h3>
+
+		</div>
+		<h3>This is the <strong>third</strong> line of test</h3>
+		<h3>This is the <strong>forth</strong> line of test</h3>			
+		<br><hr><br>
+
+		<!-- JQ mouseover mousedown etc video #03 -->
+		<h3>JQ mouseover mousedown etc video #03</h3>
+		<h3>heading one</h3>
+		<h3>heading two</h3>
+		<h3>heading three</h3>
+		
+		
+		<br><hr><br>
+		
+		<br><hr><br>
+	</body>
+</html>
+
